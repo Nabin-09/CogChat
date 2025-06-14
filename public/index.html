@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>COG chat</title>
 </head>
 <body>
     <h1>COG chat</h1>
+    <div class="main">
+        <div class="name">
+            <span> <i class = "far fa-user"></i> </span>
+            <input type="text" id="name-input" class = "name-input" value = "anonymous" maxlength="20"/>
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    lorem ipsum 
+                    <span>blueBird | 14th June 21:14</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    lorem ipsum 
+                    <span>blueBird | 14th June 21:14</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    Nabin is typing a message
+                </p>
+            </li>
+        </ul>
+        <form  class="message-form" id = "message-form">
+            <input type="text" name="message" id = "message-input" class="message-input">
+            <div class="v-divider"></div>
+            <button type="submit" class= "send-button">send<span><i class = "fas fa-paper-plane"></i></span></button>
+        </form>
+
+        <h3 class="clients-total" id="clients-total">
+            Total Clients : 2          
+        </h3>
+    </div>
 </body>
 </html>
