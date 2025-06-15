@@ -29,3 +29,15 @@ function sendMessage(){
 socket.on('chat-message', (data)=>{
     console.log(data)
 })
+
+function addMessageToUI(isOwnMessage , data){
+    const element = `
+            <li class="${isOwnMessage ? "message-right" : "message-left"}">
+                <p class="message">
+                    ${data.message}
+                    <span>${data.name} | ${moment(data.dateTime)}</span>
+                </p>
+            </li>
+            `
+
+}
