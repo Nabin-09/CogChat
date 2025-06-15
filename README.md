@@ -22,7 +22,7 @@ A real-time web chat application built using **WebSockets** via `Socket.IO`, des
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://github.com/Nabin-09/CogChat/blob/main/assets/COGchatPreview.png" alt="COG Chat UI Screenshot" width="400"/>
+  <img src="https://github.com/Nabin-09/CogChat/blob/main/public/assets/COGchatPreview.png" alt="COG Chat UI Screenshot" width="400"/>
 </div>
 
 ---
