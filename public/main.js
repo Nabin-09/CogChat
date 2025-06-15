@@ -78,12 +78,12 @@ messageInput.addEventListener('blur' , (e)=>{
                 </p>
         </li>
         ` 
-        messageContainer.innerHTML += element
+        messageContainer.insertAdjacentHTML("beforeend", element);
+
     }) 
 
     function clearFeedback(){
         document.querySelectorAll('li.message-feedback').forEach(element=>{
             element.parentNode.removeChild(element)
-        }
-        )
+        })
     }   
